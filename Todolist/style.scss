@@ -1,0 +1,102 @@
+* {box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+   font-family: "Poppins", sans-serif;}//Global styling
+
+   //Setting variables
+$gradient: linear-gradient(135deg, #f5af19, #f12711);
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+$light-grey: #999;
+$placeholder: #bfbfbf;
+$black: black;
+$deepgrey: #444444;
+$orange: #f12711;
+
+
+//body styling
+body {background: $gradient;
+}
+
+//Todolist container styling
+.todo-div {width: 40%;
+           margin: 100px auto;
+           background-color: white;
+           border: none;
+           border-radius: 10px;
+           box-shadow: $shadow;
+           padding: 30px;
+}
+
+//Input area styling
+.todo-input {display: flex;
+             justify-content: space-around;
+             align-items: center;
+             
+             //input style
+             input {width: 90%;
+                    padding: 10px;
+                    font-size: 18px;
+                    color: $black;
+                    border: 1px solid $light-grey;
+                    border-radius: 6px;
+             }
+
+             //add task icon
+             p {        color: $orange;
+                        width: 10%;
+                        text-align: center;
+                        font-size: 30px;
+                        cursor: pointer;
+             }
+
+}
+
+//Date and clear all container
+.todo-date {display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $placeholder;
+
+            //Date element styling
+            .date {color: $deepgrey;
+                   font-style: italic;
+            }
+
+            //Clear button style
+            .clear {color: white;
+                    background: $gradient;
+                    object-fit: contain;
+                    padding: 3px 5px;
+                    border-radius: 5px;
+                    margin: 15px 0px;
+                    cursor: pointer;
+            }
+}
+
+//Todolist mini-container
+.list {margin: 20px auto;
+
+      //text container styling
+      .mylist {display: flex;
+               flex-direction: row;
+               justify-content: flex-start;
+               align-items: center;
+               overflow: hidden;
+               position: relative;
+      }
+
+      //checkbox style
+      .check {text-align: left;
+              width: 7%;
+      }
+      //checkbox over effect
+      .check:hover {color: $orange;}
+       
+      //text adjustments 
+      .text {width: 86%;}
+
+      //delete icon styling
+      .delete {width: 7%;
+               text-align: right;
+      }
+}
