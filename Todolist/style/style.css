@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: linear-gradient(135deg, #f5af19, #f12711);
+}/*# sourceMappingURL=style.css.map */

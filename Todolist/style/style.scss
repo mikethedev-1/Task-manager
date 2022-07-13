@@ -1,0 +1,18 @@
+* {box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+   font-family: "Poppins", sans-serif;}//Global styling
+
+   //Setting variables
+$gradient: linear-gradient(135deg, #f5af19, #f12711);
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+$light-grey: #999;
+$placeholder: #bfbfbf;
+$black: black;
+$deepgrey: #444444;
+$orange: #f12711;
+
+
+//body styling
+body {background-color: $gradient;
+}
