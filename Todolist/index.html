@@ -21,25 +21,25 @@
       <div class="todo-div">
         <!--Input div-->
         <div class="todo-input">
-            <input type="text" name="todo" placeholder="Add task here">
+            <input type="text" name="todo" placeholder="Add task here" required>
             <p><i class="fa-solid fa-circle-plus" onclick="add()"></i></p>
         </div>
 
         <!--Date div-->
         <div class="todo-date">
             <p class="date">This is the current date</p>
-            <p class="clear" onclick="clear()">Clear All</p>
+            <p class="clear" onclick="clear()"> Clear All </p>
         </div>
 
         <!--TODOLIST-->
-        <div class="list">
-            <div class="mylist">
-                <p class="check" onclick="check"><i class="fa-regular fa-square"></i></p>
+        <ul class="list">
+           <!--<li class="mylist">
+                <p class="check" onclick="check()"><i class="fa-regular fa-square"></i></p>
                 <p class="text">This is some text</p>
                 <p class="delete" onclick="remove()"><i class="fa-regular fa-trash-can"></i></p>
-            </div>
+           </li>-->
         </div>
 
-      </div>
+    </ul>
     </body>
 </html>

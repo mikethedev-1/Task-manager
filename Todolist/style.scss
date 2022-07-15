@@ -88,6 +88,7 @@ body {background: $gradient;
       //checkbox style
       .check {text-align: left;
               width: 7%;
+              cursor: pointer;
       }
       //checkbox over effect
       .check:hover {color: $orange;}
@@ -98,5 +99,7 @@ body {background: $gradient;
       //delete icon styling
       .delete {width: 7%;
                text-align: right;
+               cursor: pointer;
       }
+      .delete:hover {color: $orange;}
 }

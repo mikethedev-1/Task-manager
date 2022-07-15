@@ -75,6 +75,7 @@ body {
 .list .check {
   text-align: left;
   width: 7%;
+  cursor: pointer;
 }
 .list .check:hover {
   color: #f12711;
@@ -85,4 +86,8 @@ body {
 .list .delete {
   width: 7%;
   text-align: right;
+  cursor: pointer;
+}
+.list .delete:hover {
+  color: #f12711;
 }
