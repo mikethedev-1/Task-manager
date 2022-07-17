@@ -66,10 +66,11 @@ body {background: $gradient;
             .clear {color: white;
                     background: $gradient;
                     object-fit: contain;
-                    padding: 3px 5px;
+                    padding: 6px;
                     border-radius: 5px;
                     margin: 15px 0px;
                     cursor: pointer;
+                    border: none;
             }
 }
 
@@ -83,15 +84,17 @@ body {background: $gradient;
                align-items: center;
                overflow: hidden;
                position: relative;
+               margin-bottom: 10px;
       }
 
       //checkbox style
       .check {text-align: left;
               width: 7%;
               cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
       }
-      //checkbox over effect
-      .check:hover {color: $orange;}
        
       //text adjustments 
       .text {width: 86%;}
@@ -102,4 +105,38 @@ body {background: $gradient;
                cursor: pointer;
       }
       .delete:hover {color: $orange;}
+}
+
+//Media query styling
+@media screen and (max-width: 700px) {
+        .todo-div {width: 70%;
+        }
+}
+
+@media screen and (max-width: 500px) {
+        .todo-div {width: 80%;
+        }
+}
+
+@media screen and (max-width: 900px) {
+        .todo-div {width: 70%;
+        }
+}
+
+@media screen and (max-width: 450px) {
+        .todo-div {width: 95%;
+        }
+        .date {font-size: 13px;
+        }
+        .clear {font-size: 11px;
+        }
+}
+
+@media screen and (max-width: 300px) {
+        .todo-div {width: 95%;
+        }
+        .date {font-size: 11px;
+        }
+        .clear {font-size: 11px;
+        }
 }

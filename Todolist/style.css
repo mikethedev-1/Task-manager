@@ -55,10 +55,11 @@ body {
   background: linear-gradient(135deg, #f5af19, #f12711);
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 3px 5px;
+  padding: 6px;
   border-radius: 5px;
   margin: 15px 0px;
   cursor: pointer;
+  border: none;
 }
 
 .list {
@@ -71,14 +72,15 @@ body {
   align-items: center;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
 }
 .list .check {
   text-align: left;
   width: 7%;
   cursor: pointer;
-}
-.list .check:hover {
-  color: #f12711;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .list .text {
   width: 86%;
@@ -90,4 +92,42 @@ body {
 }
 .list .delete:hover {
   color: #f12711;
+}
+
+@media screen and (max-width: 700px) {
+  .todo-div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .todo-div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .todo-div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .todo-div {
+    width: 95%;
+  }
+  .date {
+    font-size: 13px;
+  }
+  .clear {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .todo-div {
+    width: 95%;
+  }
+  .date {
+    font-size: 11px;
+  }
+  .clear {
+    font-size: 11px;
+  }
 }
